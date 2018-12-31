@@ -8,18 +8,51 @@ h1 {
 }
 
 .content input {
-    width: 38%;
+    width: 296px;
+    height: 60px;
+    font-size: 40px;
+    border: 1px solid black;
+    text-align: right;
+    overflow: scroll;
 }
 
 .numbersContainer {
-    width: 40%;
+    width: 300px;
     display: grid;
 }
 
+.numbersContainer button {
+    height: 90px;
+    font-size: 24px;
+    background: grey;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+}
+
+.numbersContainer button:hover {
+    background: white;
+}
+
 .container2 {
-    width: 40%;
+    width: 300px;
     display: flex;
     justify-content: space-between;
     align-content: stretch;
     flex-wrap: nowrap;
+}
+
+.container2 button {
+    height: 70px;
+    background: orange;
+    font-size: 21px;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.container2 button:hover {
+    background: orangered;
 }
