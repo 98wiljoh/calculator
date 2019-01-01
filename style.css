@@ -1,14 +1,14 @@
-h1 {
-    font-size: 36px;
-    margin-bottom: 30px;
+body, .content {
+    background: black;
 }
 
 .content {
+    margin-top:50px;
     width: 40%;
 }
 
 .content input {
-    width: 296px;
+    width: 298px;
     height: 60px;
     font-size: 40px;
     border: 1px solid black;
@@ -19,12 +19,14 @@ h1 {
 .numbersContainer {
     width: 300px;
     display: grid;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
 }
 
 .numbersContainer button {
     height: 90px;
     font-size: 24px;
-    background: grey;
+    background: #b7b7b7;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -32,21 +34,22 @@ h1 {
 }
 
 .numbersContainer button:hover {
-    background: white;
+    background: #8c8c8c;
 }
 
 .container2 {
     width: 300px;
     display: flex;
-    justify-content: space-between;
+    justify-content: stretch;
     align-content: stretch;
     flex-wrap: nowrap;
 }
 
 .container2 button {
     height: 70px;
-    background: orange;
+    background: #ff9c00;
     font-size: 21px;
+    flex: 1;
     border: none;
     appearance: none;
     -webkit-appearance: none;
@@ -54,5 +57,9 @@ h1 {
 }
 
 .container2 button:hover {
-    background: orangered;
+    background: #c47800;
+}
+
+.smallFont {
+    font-size: 10px;
 }
